@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# LlamaIndex generated data
+data/llamaindex_storage/
+
+# Downloaded models
+models/llm/*.gguf
+
+# Logs
+logs/
+*.log
