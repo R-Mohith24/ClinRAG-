@@ -22,7 +22,7 @@
 **Requirements**: REQ-03, REQ-04
 
 ### Phase 3: Application Layer
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Expose the logic on FastApi and present interactions with citations in a chat-style Streamlit webapp.
 **Requirements**: REQ-05, REQ-06
 
