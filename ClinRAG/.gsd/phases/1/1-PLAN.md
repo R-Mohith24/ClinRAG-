@@ -34,7 +34,7 @@ Implement modular data loading and semantic chunking using LlamaIndex's `SimpleD
   <files>src/ingestion/chunker.py</files>
   <action>
     Create a module that defines a function `chunk_documents(documents: List[Document])` -> `List[BaseNode]`.
-    - Instantiate LlamaIndex `SentenceSplitter` with `chunk_size=512` and `chunk_overlap=50`.
+    - Instantiate LlamaIndex `SentenceSplitter` with `chunk_size=512` and `chunk_overlap=50`.afile
     - Call the splitter's `get_nodes_from_documents(documents)` method.
     - Return the resulting nodes.
   </action>
