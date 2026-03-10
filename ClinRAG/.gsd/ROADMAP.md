@@ -17,8 +17,8 @@
 **Requirements**: REQ-01, REQ-02
 
 ### Phase 2: RAG Pipeline
-**Status**: ⬜ Not Started
-**Objective**: Combine BioMistral LLM wrapper, Query Engine, and Multi-turn Chat Engine with memory context.
+**Status**: ✅ Complete
+**Objective**: Combine BioMistral LLM wrapper, CitationQueryEngine, and Multi-turn Chat Engine with memory context.
 **Requirements**: REQ-03, REQ-04
 
 ### Phase 3: Application Layer

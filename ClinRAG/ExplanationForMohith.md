@@ -46,7 +46,7 @@ ClinRAG/                     ← Root of the project (this is the folder you ope
 | File | Purpose | Key Functions |
 |------|---------|----------------|
 | `document_loader.py` | Load PDFs from a directory | `load_documents(input_dir: str) -> List[Document]` – uses `SimpleDirectoryReader` from **LlamaIndex** |
-| `chunker.py` | Split loaded documents into semantic chunks | `chunk_documents(documents: List[Document]) -> List[BaseNode]` – uses `SentenceSplitter(chunk_size=512, chunk_overlap=50)` |
+| `chunker.py` | Split loaded documents into true semantic chunks | `chunk_documents(documents: List[Document]) -> List[BaseNode]` – uses `SemanticSplitterNodeParser` to cut text dynamically at topic breakpoints. |
 | `embedder.py` | Provide an embedding model | `get_embedder() -> HuggingFaceEmbedding` – wraps **intfloat/e5‑large‑v2** (1024‑dimensional) |
 | `build_index.py` | End‑to‑end pipeline that creates a FAISS vector store | `main()` – sets `Settings.embed_model`, loads docs, chunks them, builds `FaissVectorStore`, persists to `data/llamaindex_storage/` |
 
@@ -105,6 +105,7 @@ ClinRAG/                     ← Root of the project (this is the folder you ope
 - **LlamaIndex** – Provides a unified API for document loading, chunking, embedding, and vector‑store integration, dramatically reducing boiler‑plate and ensuring future extensibility (e.g., swapping out the embedder).
 - **E5‑Large‑V2** – State‑of‑the‑art open‑source embedding model with strong performance on retrieval benchmarks (MTEB). It produces 1024‑dimensional vectors, which align perfectly with FAISS’s default inner‑product metric.
 - **FAISS** – Industry‑standard similarity search library; works offline, has sub‑millisecond query latency on a laptop, and is widely cited in academic RAG papers.
+- **True Semantic Chunking** – Instead of blindly slicing medical text every 512 words (which fragments meaning), we use `SemanticSplitterNodeParser`. It embeds every sentence and mathematically detects when the topic changes, ensuring chunks encapsulate complete medical thoughts natively.
 - **Virtual environment & pinned `requirements.txt`** – Guarantees deterministic builds for reviewers and reproducibility for the conference submission.
 
 ## 3️⃣ Phase 2 – Planning (What We Have Ready)
