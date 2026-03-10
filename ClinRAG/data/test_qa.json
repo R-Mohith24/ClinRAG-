@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What are the common symptoms of Type 2 Diabetes?",
+        "ground_truth": "Common symptoms of Type 2 Diabetes include increased thirst, frequent urination, increased hunger, unintended weight loss, fatigue, blurred vision, slow-healing sores, and frequent infections."
+    },
+    {
+        "question": "What is the recommended first-line pharmacological treatment for hypertension?",
+        "ground_truth": "The recommended first-line pharmacological treatments for hypertension typically include thiazide diuretics, calcium channel blockers (CCBs), and ACE inhibitors or ARBs."
+    },
+    {
+        "question": "How is asthma typically diagnosed in adults?",
+        "ground_truth": "Asthma in adults is typically diagnosed through a combination of medical history, physical examination, and pulmonary function tests, particularly spirometry showing reversible airway obstruction."
+    },
+    {
+        "question": "What are the primary risk factors for cardiovascular disease?",
+        "ground_truth": "Primary risk factors for cardiovascular disease include increasing age, male gender, family history of early heart disease, elevated blood pressure, high cholesterol levels, smoking, diabetes, obesity, and physical inactivity."
+    },
+    {
+        "question": "Describe the typical presentation of acute appendicitis.",
+        "ground_truth": "Acute appendicitis usually presents with abdominal pain that begins around the navel and then shifts to the lower right abdomen, accompanied by loss of appetite, nausea, vomiting, and a low-grade fever."
+    }
+]

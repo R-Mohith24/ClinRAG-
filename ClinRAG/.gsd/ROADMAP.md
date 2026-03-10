@@ -27,8 +27,8 @@
 **Requirements**: REQ-05, REQ-06
 
 ### Phase 4: Evaluation
-**Status**: ⬜ Not Started
-**Objective**: Process 50 query-datasets comparing RAG against No-RAG baselines, calculating Hallucinations vs True Mentions, and speed analysis.
+**Status**: ✅ Complete
+**Objective**: Process 50 query-datasets comparing RAG against No-RAG baselines, calculating Hallucinations vs True Mentions, and speed analysis using RAGAS locally.
 **Requirements**: REQ-07, REQ-08
 
 ### Phase 5: Documentation & Presentation

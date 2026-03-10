@@ -182,3 +182,31 @@ In plain, non‑technical language, here’s what the system will do step by ste
 
 When you finally run `/execute 2`, you’ll see console messages like:
 
+```
+[INFO] Loading BioMistral model …
+[INFO] Loading FAISS index …
+[INFO] Running test query: "What are the symptoms of type 2 diabetes?"
+Answer: … (text from the Merck Manual) …
+```
+
+That’s all – a complete, end‑to‑end medical question‑answer system ready for the next phase.
+
+---
+
+## 5️⃣ Phase 3 & 4 (Application & Evaluation)
+
+### Phase 3: The UI and Application Layer
+Because loading an LLM like BioMistral takes a lot of laptop memory, we cannot reload it every time the user types a message. 
+We built an **Application Layer** divided into two parts:
+1. **The Brain (FastAPI Backend):** Runs silently at `http://localhost:8000`. It loads the heavy AI and FAISS index just once at startup, handles all the medical logic, and calculates the true source citations.
+2. **The Face (Streamlit Frontend):** Runs visually. It sends your question to the backend and immediately shows the answer. Right below the answer, it gives a **"View Source Citations"** dropdown.
+
+### Phase 4: Offline Evaluation (RAGAS)
+For your IEEE presentation, you need empirical proof that the bot doesn't hallucinate. We accomplished this locally (meaning cost-free and offline, no OpenAI keys) using the **RAGAS framework**.
+
+- `generate_dataset.py` passes 50 medical queries through our pipeline, recording CPU latency and gathering contexts.
+- `run_ragas.py` acts as a robotic "Judge." We wrap our local LlamaCPP model and E5 embeddings so they can score themselves on two IEEE-standard metrics:
+  1. **Faithfulness** (Did the answer hallucinate? 1.0 means Zero Hallucinations).
+  2. **Answer Relevancy** (Did the answer actually address the doctor's exact question?).
+
+All grades are outputted into `data/ragas_report.csv` so you can easily generate bar charts for your slide deck.
