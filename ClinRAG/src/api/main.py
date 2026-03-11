@@ -130,3 +130,23 @@ def chat_endpoint(request: ChatRequest):
     except Exception as e:
         print(f"[ERROR] Chat generation failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/reset_session")
+def reset_session():
+    """
+    Resets the chat engine's conversation memory.
+    Call this to clear the ChatMemoryBuffer between different users/sessions
+    so conversation history does not bleed across sessions.
+    """
+    engine = app_state.get("chat_engine")
+    if not engine:
+        raise HTTPException(status_code=503, detail="Chat engine not ready yet.")
+    
+    try:
+        engine.reset()
+        print("[INFO] Chat session reset.")
+        return {"status": "ok", "message": "Session memory cleared successfully."}
+    except Exception as e:
+        print(f"[ERROR] Session reset failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))

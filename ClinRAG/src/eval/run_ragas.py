@@ -10,7 +10,7 @@ import pandas as pd
 from datasets import Dataset
 
 from ragas import evaluate
-from ragas.metrics import faithfulness, answer_relevancy
+from ragas.metrics import faithfulness, answer_relevancy, context_precision
 
 # For local evaluation using LlamaIndex wrappers
 from ragas.llms import LlamaIndexLLMWrapper
@@ -72,8 +72,10 @@ def main():
     print("\n[INFO] Starting Evaluation (This may take significant time on CPU...)")
     metrics = [
         faithfulness,
-        answer_relevancy
+        answer_relevancy,
+        context_precision,
     ]
+
     
     try:
         # We pass our local models so RAGAS doesn't try to call OpenAI

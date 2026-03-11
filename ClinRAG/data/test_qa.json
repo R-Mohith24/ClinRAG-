@@ -5,7 +5,7 @@
     },
     {
         "question": "What is the recommended first-line pharmacological treatment for hypertension?",
-        "ground_truth": "The recommended first-line pharmacological treatments for hypertension typically include thiazide diuretics, calcium channel blockers (CCBs), and ACE inhibitors or ARBs."
+        "ground_truth": "The recommended first-line pharmacological treatments for hypertension typically include thiazide diuretics, calcium channel blockers, and ACE inhibitors or ARBs."
     },
     {
         "question": "How is asthma typically diagnosed in adults?",
@@ -13,10 +13,190 @@
     },
     {
         "question": "What are the primary risk factors for cardiovascular disease?",
-        "ground_truth": "Primary risk factors for cardiovascular disease include increasing age, male gender, family history of early heart disease, elevated blood pressure, high cholesterol levels, smoking, diabetes, obesity, and physical inactivity."
+        "ground_truth": "Primary risk factors for cardiovascular disease include increasing age, male gender, family history, elevated blood pressure, high cholesterol, smoking, diabetes, obesity, and physical inactivity."
     },
     {
         "question": "Describe the typical presentation of acute appendicitis.",
-        "ground_truth": "Acute appendicitis usually presents with abdominal pain that begins around the navel and then shifts to the lower right abdomen, accompanied by loss of appetite, nausea, vomiting, and a low-grade fever."
+        "ground_truth": "Acute appendicitis usually presents with abdominal pain that begins around the navel and shifts to the lower right abdomen, accompanied by loss of appetite, nausea, vomiting, and low-grade fever."
+    },
+    {
+        "question": "What is the pathophysiology of Type 1 Diabetes?",
+        "ground_truth": "Type 1 Diabetes results from autoimmune destruction of pancreatic beta cells, leading to absolute insulin deficiency. It is mediated by T-lymphocytes and associated with specific HLA antigens."
+    },
+    {
+        "question": "What are the diagnostic criteria for metabolic syndrome?",
+        "ground_truth": "Metabolic syndrome is diagnosed when a patient has at least three of: abdominal obesity, elevated triglycerides, low HDL cholesterol, elevated blood pressure, and elevated fasting glucose."
+    },
+    {
+        "question": "How is pneumonia differentiated from bronchitis clinically?",
+        "ground_truth": "Pneumonia typically features productive cough, fever, chest pain, and signs of lung consolidation on exam/imaging. Bronchitis lacks consolidation and is usually self-limiting."
+    },
+    {
+        "question": "What are the classic early signs of Parkinson's Disease?",
+        "ground_truth": "Classic early signs include resting tremor (pill-rolling), bradykinesia, muscular rigidity, and postural instability. The tremor is typically unilateral at onset."
+    },
+    {
+        "question": "Explain the mechanism of action of beta-blockers.",
+        "ground_truth": "Beta-blockers competitively block catecholamines at beta-adrenergic receptors, reducing heart rate, myocardial contractility, and blood pressure. They also decrease renin release from the kidneys."
+    },
+    {
+        "question": "What are the symptoms of pulmonary embolism?",
+        "ground_truth": "Symptoms include sudden onset dyspnea, pleuritic chest pain, tachycardia, haemoptysis, and in massive PE: hypotension and syncope. Classic triad is dyspnea, chest pain, and haemoptysis."
+    },
+    {
+        "question": "What is the management of anaphylaxis?",
+        "ground_truth": "Immediate intramuscular epinephrine (adrenaline) to the outer thigh is the first-line treatment. Supportive care includes airway management, IV fluids, antihistamines, and corticosteroids."
+    },
+    {
+        "question": "Describe the differences between Type I and Type II hypersensitivity reactions.",
+        "ground_truth": "Type I is IgE-mediated immediate hypersensitivity (e.g., anaphylaxis). Type II involves IgG/IgM antibodies targeting cell-surface antigens (e.g., haemolytic anaemia). Both differ in mechanism and timing."
+    },
+    {
+        "question": "What are the complications of uncontrolled hypertension?",
+        "ground_truth": "Complications include stroke, myocardial infarction, heart failure, chronic kidney disease, peripheral artery disease, hypertensive retinopathy, and aortic dissection."
+    },
+    {
+        "question": "How is hypothyroidism diagnosed and treated?",
+        "ground_truth": "Diagnosis is confirmed by elevated TSH and low free T4. Treatment is lifelong levothyroxine replacement therapy, with dose adjusted based on TSH monitoring."
+    },
+    {
+        "question": "What is the presentation of myocardial infarction?",
+        "ground_truth": "Classic presentation includes crushing central chest pain radiating to the left arm or jaw, sweating, nausea, and shortness of breath. Atypical presentations occur, especially in women and diabetics."
+    },
+    {
+        "question": "What are the causes of macrocytic anaemia?",
+        "ground_truth": "Causes include Vitamin B12 deficiency, folate deficiency, hypothyroidism, liver disease, alcohol excess, medications (e.g., methotrexate, hydroxyurea), and myelodysplastic syndrome."
+    },
+    {
+        "question": "How is chronic kidney disease staged?",
+        "ground_truth": "CKD is staged 1–5 based on GFR: Stage 1 (>90), Stage 2 (60–89), Stage 3 (30–59), Stage 4 (15–29), Stage 5 (<15 or dialysis). Albuminuria further modifies risk."
+    },
+    {
+        "question": "What is the mechanism of action of statins?",
+        "ground_truth": "Statins inhibit HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis in the liver, reducing LDL cholesterol and providing pleiotropic cardiovascular protective effects."
+    },
+    {
+        "question": "Describe the management of acute decompensated heart failure.",
+        "ground_truth": "Manage with IV diuretics (furosemide), oxygen, vasodilators (nitrates), and positioning (upright). Identify and treat precipitating cause. Avoid nephrotoxins."
+    },
+    {
+        "question": "What are the features of Cushing's syndrome?",
+        "ground_truth": "Features include central obesity, moon face, buffalo hump, purple striae, skin thinning, hirsutism, proximal myopathy, hypertension, osteoporosis, and glucose intolerance."
+    },
+    {
+        "question": "How is rheumatoid arthritis distinguished from osteoarthritis?",
+        "ground_truth": "RA is inflammatory, symmetrical, involves small joints (MCP, PIP), with morning stiffness >1 hour and positive RF/anti-CCP. OA is degenerative, asymmetrical, affects weight-bearing joints with brief morning stiffness."
+    },
+    {
+        "question": "What are the indications for starting dialysis in CKD?",
+        "ground_truth": "Indications include severe uraemic symptoms, refractory fluid overload, hyperkalaemia, metabolic acidosis, and pericarditis. GFR <10 ml/min is typically the threshold."
+    },
+    {
+        "question": "What is the treatment for community-acquired pneumonia (CAP)?",
+        "ground_truth": "Mild CAP is treated with oral amoxicillin. Moderate-severe CAP requires IV amoxicillin plus a macrolide (e.g., clarithromycin). Atypical coverage includes macrolides or quinolones."
+    },
+    {
+        "question": "Explain the pathophysiology of atherosclerosis.",
+        "ground_truth": "Atherosclerosis begins with endothelial injury, followed by LDL infiltration, macrophage foam cell formation, smooth muscle cell proliferation, and fibrous cap formation over a lipid-rich core."
+    },
+    {
+        "question": "What are the side effects of ACE inhibitors?",
+        "ground_truth": "Common side effects include dry persistent cough, hyperkalaemia, hypotension (especially first dose), angioedema (rare but serious), and renal impairment in bilateral renal artery stenosis."
+    },
+    {
+        "question": "How is sepsis defined and managed?",
+        "ground_truth": "Sepsis is life-threatening organ dysfunction due to dysregulated host response to infection. Management follows the Sepsis-6: blood cultures, IV antibiotics, IV fluids, lactate, urine output monitoring, oxygen."
+    },
+    {
+        "question": "What is the mechanism of insulin resistance in Type 2 Diabetes?",
+        "ground_truth": "Insulin resistance involves impaired insulin signalling at target cells (liver, muscle, adipose), often related to obesity-induced inflammation and ectopic lipid deposition, leading to compensatory hyperinsulinaemia."
+    },
+    {
+        "question": "What are the ECG findings in hyperkalaemia?",
+        "ground_truth": "Progressive ECG changes: peaked T waves → widening QRS → PR prolongation → P wave disappearance → sine wave pattern → ventricular fibrillation. Emergency treatment if K+ >6.5 mmol/L or ECG changes."
+    },
+    {
+        "question": "Describe the clinical features of meningitis.",
+        "ground_truth": "Classic triad: headache, fever, neck stiffness. Other features include photophobia, phonophobia, altered consciousness, rash (non-blanching in meningococcal septicaemia), and Kernig's/Brudzinski's signs."
+    },
+    {
+        "question": "What are the causes of secondary hypertension?",
+        "ground_truth": "Common causes include primary hyperaldosteronism, renal artery stenosis, chronic kidney disease, phaeochromocytoma, Cushing's syndrome, thyroid disorders, coarctation of the aorta, and obstructive sleep apnoea."
+    },
+    {
+        "question": "How is stroke classified and what is the acute management?",
+        "ground_truth": "Strokes are ischaemic (~85%) or haemorrhagic. Acute ischaemic stroke: CT brain to exclude haemorrhage, then IV thrombolysis (if <4.5h) or mechanical thrombectomy. Haemorrhagic: BP control, neurosurgical review."
+    },
+    {
+        "question": "What is the diagnostic workup for suspected pulmonary embolism?",
+        "ground_truth": "Pre-test probability (Wells score), D-dimer (if low probability), then CTPA (gold standard). VQ scan if renal impairment or allergy. ECG may show S1Q3T3 pattern or sinus tachycardia."
+    },
+    {
+        "question": "Explain the mechanism and causes of normocytic anaemia.",
+        "ground_truth": "Normocytic anaemia has normal MCV. Causes include anaemia of chronic disease (most common), acute blood loss, haemolytic anaemia, aplastic anaemia, hypothyroidism, and mixed deficiencies."
+    },
+    {
+        "question": "What is Addison's disease and how does it present?",
+        "ground_truth": "Addison's disease is primary adrenal insufficiency due to adrenal gland destruction (often autoimmune). Presents with fatigue, weight loss, postural hypotension, hyperpigmentation, hyponatraemia, and hyperkalaemia."
+    },
+    {
+        "question": "How is atrial fibrillation managed?",
+        "ground_truth": "Management involves rate control (beta-blockers, digoxin) or rhythm control (cardioversion, antiarrhythmics), anticoagulation based on CHA2DS2-VASc score, and treatment of underlying cause."
+    },
+    {
+        "question": "What are the complications of diabetes mellitus?",
+        "ground_truth": "Microvascular: diabetic nephropathy, retinopathy, neuropathy. Macrovascular: coronary artery disease, stroke, peripheral artery disease. Others: diabetic ketoacidosis, hyperosmolar state, infections."
+    },
+    {
+        "question": "Describe the investigation of iron deficiency anaemia.",
+        "ground_truth": "Blood film shows microcytic hypochromic anaemia. Serum ferritin is low (most sensitive marker), with low serum iron, elevated TIBC, and low transferrin saturation. Investigate cause (e.g., GI bleed, coeliac)."
+    },
+    {
+        "question": "What is COPD and what are its phenotypes?",
+        "ground_truth": "COPD is a progressive obstructive airway disease caused mainly by smoking. Phenotypes include chronic bronchitis (productive cough >3 months/year for 2 years) and emphysema (airspace enlargement with alveolar destruction)."
+    },
+    {
+        "question": "How does systemic lupus erythematosus (SLE) present?",
+        "ground_truth": "SLE is a multisystem autoimmune disease. Features: malar rash, discoid rash, photosensitivity, oral ulcers, arthritis, serositis, renal disease, neurological features, haematological abnormalities. ANA and anti-dsDNA antibodies."
+    },
+    {
+        "question": "What is the management of type 2 diabetes mellitus?",
+        "ground_truth": "Lifestyle modification (diet, exercise), metformin as first-line pharmacotherapy, escalation with SGLT2 inhibitors, GLP-1 agonists, DPP-4 inhibitors, sulfonylureas, or insulin. Regular HbA1c monitoring."
+    },
+    {
+        "question": "What investigations confirm a diagnosis of coeliac disease?",
+        "ground_truth": "Serology: anti-tissue transglutaminase (tTG) IgA (most sensitive/specific). Confirmation by duodenal biopsy showing villous atrophy, crypt hyperplasia, and increased intraepithelial lymphocytes. HLA-DQ2/DQ8 testing for exclusion."
+    },
+    {
+        "question": "What are the features and management of hyperthyroidism?",
+        "ground_truth": "Features: weight loss, heat intolerance, sweating, palpitations, tremor, diarrhoea, goitre, exophthalmos (Graves). Low TSH, high T3/T4. Management: carbimazole/propylthiouracil, beta-blockers for symptoms, radioiodine, or thyroidectomy."
+    },
+    {
+        "question": "Describe the management of community-acquired meningitis in adults.",
+        "ground_truth": "IV ceftriaxone immediately if meningitis suspected (don't delay for LP). Add ampicillin if Listeria risk. IV dexamethasone reduces complications. Lumbar puncture after CT if focal neurology is absent."
+    },
+    {
+        "question": "What causes acute pancreatitis and how is it managed?",
+        "ground_truth": "Most common causes: gallstones and alcohol (GET SMASHED mnemonic). Manage with aggressive IV fluid resuscitation, analgesia, nil by mouth initially, and treat underlying cause (e.g., ERCP for gallstones)."
+    },
+    {
+        "question": "What are the types and features of thyroid cancer?",
+        "ground_truth": "Types: papillary (most common, good prognosis), follicular, medullary (associated with MEN2, calcitonin marker), anaplastic (worst prognosis). Presents as a painless thyroid nodule. Managed with surgery ± radioiodine."
+    },
+    {
+        "question": "How is multiple sclerosis diagnosed?",
+        "ground_truth": "MS is diagnosed using McDonald criteria: dissemination in space and time. MRI shows periventricular plaques. CSF shows oligoclonal bands. Evoked potentials may slow. Clinical presentation with relapsing-remitting episodes."
+    },
+    {
+        "question": "What are the clinical features and causes of liver cirrhosis?",
+        "ground_truth": "Features: jaundice, ascites, peripheral oedema, splenomegaly, spider naevi, palmar erythema, gynaecomastia, encephalopathy. Causes include alcohol, viral hepatitis B/C, NAFLD, autoimmune hepatitis, haemochromatosis."
+    },
+    {
+        "question": "What is the mechanism of warfarin and how is its reversal managed?",
+        "ground_truth": "Warfarin inhibits vitamin K-dependent clotting factors (II, VII, IX, X) and proteins C and S. Reversal: withhold warfarin, give vitamin K, and for urgent reversal use four-factor PCC or FFP."
+    },
+    {
+        "question": "Describe the diagnosis and treatment of tuberculosis.",
+        "ground_truth": "Diagnosis: sputum smear and culture (gold standard), TB PCR, CXR (upper lobe infiltrates/cavitation), Mantoux/IGRA tests. Treatment: HRZE for 2 months then HR for 4 months (6-month regimen standard)."
     }
 ]
